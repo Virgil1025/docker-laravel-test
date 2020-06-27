@@ -24,7 +24,7 @@ dev_phpfpm:
     - DB_HOST=dev_mysql
     - BEANSTALKD_HOST=dev_queue
   volumes:
-    - /tmp/laravel_project:/var/project
+    - /tmp/docker-laravel-test:/var/project
   working_dir: /var/project
 dev_nginx:
   container_name: dev_nginx
@@ -36,4 +36,4 @@ dev_nginx:
     - dev_phpfpm:phpfpm
   volumes:
     - /tmp/default.conf:/etc/nginx/conf.d/default.conf
-    - /tmp/laravel_project:/var/project
+    - /tmp/docker-laravel-test:/var/project
