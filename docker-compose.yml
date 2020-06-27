@@ -1,9 +1,7 @@
 dev_queue:
   container_name: dev_queue
   restart: always
-  image: kdihalas/beanstalkd:latest
-  ports:
-    - "5623:5623"
+  image: app
 dev_mysql:
   container_name: dev_mysql
   restart: always
