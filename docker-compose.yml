@@ -1,7 +1,7 @@
 dev_queue:
   container_name: dev_queue
   restart: always
-  image: app
+  image: app:test
 dev_mysql:
   container_name: dev_mysql
   restart: always
