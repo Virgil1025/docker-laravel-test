@@ -1,7 +1,7 @@
 dev_queue:
   container_name: dev_queue
   restart: always
-  image: app:test
+  image: kdihalas/beanstalkd:latest
 dev_mysql:
   container_name: dev_mysql
   restart: always
