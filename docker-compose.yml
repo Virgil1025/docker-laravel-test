@@ -16,7 +16,7 @@ dev_mysql:
 dev_phpfpm:
   container_name: dev_phpfpm
   restart: always
-  image: myphp:5.6-fpm
+  image: myphp:7.1
   links:
     - dev_mysql:db
     - dev_queue:queue
